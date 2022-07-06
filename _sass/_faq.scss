@@ -1,0 +1,46 @@
+$faq-head-size: 2.75rem;
+
+.faq{
+    padding-top: 80px;
+    background-color: $grey;
+    border: 1px solid $grey;
+    &__head{
+        font-family: $cormorant;
+        font-weight: 700;
+        font-size: $faq-head-size;
+        text-align: center;
+        color: $blue;
+        span{
+            color: $soft-red;
+        }
+    }
+    &__cards{
+        .faq__card{
+            width: 100%;
+            margin-top: 50px;
+            @media($md){
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            .question{
+                font-family: $cormorant;
+                font-weight: 700;
+                font-size: 1.7rem;
+                color: $black;
+                @media($md){
+                    font-size: 2rem;
+                }
+            }
+            .answer{
+                font-family: $dm-sans;
+                font-weight: 400;
+                font-size: .8rem;
+                @media($md){
+                    font-size: 1rem;
+                }
+                line-height: 28px;
+            }
+        }
+    }
+}

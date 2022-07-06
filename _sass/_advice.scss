@@ -1,0 +1,54 @@
+$advice-head-size: 3rem;
+$advice-line-height: 3.375rem;
+.advice{
+    padding: 80px 0;
+    padding-bottom: 0;
+    // height: 700px;
+    background: url(../images/advice-bg.png) no-repeat center center / cover;
+        // url(../images/advice-bg-2.png) no-repeat right 200px;
+    &__head{
+        font-family: $cormorant;
+        font-weight: 700;
+        font-size: $advice-head-size - 1rem;
+        line-height: $advice-line-height - .5rem;
+        text-align: center;
+        color: $blue;
+        width: 100%;
+        @media($md){
+            width: 70%;
+            margin: 20px auto;
+            font-size: $advice-head-size;
+            line-height: $advice-line-height;
+        }
+        @media($lg){
+            width: 50%;
+            margin: 20px auto;
+        }
+        span{
+            color: $soft-red;
+        }
+    }
+    &__para{
+        font-family: $dm-sans;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 24px;
+        color: $card-text;
+        text-align: center;
+        @media($md){
+            width: 70%;
+            margin: 0 auto;
+        }
+        @media($lg){
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+    .image{
+        display: flex;
+        justify-content: flex-end;
+        img{
+        display: block;
+        }
+    }
+}

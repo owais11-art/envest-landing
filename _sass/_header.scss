@@ -1,0 +1,49 @@
+$md: "min-width: 768px";
+
+nav{
+    .nav__container{
+        &__company-logo{
+            padding: 20px 0;
+        }
+        &__toggler{
+            font-size: 2rem;
+            @media($md){
+                display: none;
+            }
+        }
+        &__nav-items{
+            display: none;
+            @media($md){
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            align-items: center;
+            &__nav-item{
+                padding: 20px 0;
+                align-self: center;
+                margin-top: 5px;
+                font-family: $dm-sans;
+                a{
+                    color: $nav-links;
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+                button{
+                    background-color: $white;
+                    padding: 10px 29px;
+                    border: 2px solid $soft-red;
+                    border-radius: 50px;
+                    color: $soft-red;
+                    font-weight: 700;
+                    transition: all .5s;
+                    &:hover{
+                        border-color: $white;
+                        background-color: $soft-red;
+                        color: $white;
+                    }
+                }
+            }
+            }
+        }
+    }
+}

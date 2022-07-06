@@ -1,0 +1,15 @@
+<aside class="side-nav">
+    <div class="side-nav__container__cancel">
+        <i class="bi bi-x-circle-fill"></i>
+    </div>
+    <ul class="side-nav__container__nav-items">
+        {% for item in site.data.navbar %}
+            <li class="side-nav__container__nav-items__nav-item">
+                <a href="{{ item.link }}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+        <li class="side-nav__container__nav-items__nav-item">
+            <button>Get it Now</button>
+        </li>
+    </ul>
+</aside>

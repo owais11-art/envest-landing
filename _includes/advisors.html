@@ -1,0 +1,25 @@
+<section class="advisors">
+    <div class="box">
+        <h2 class="advisors__head">Us vs Traditional Advisors</h2>
+        <div class="row advisors__flex__wrap align-items-center">
+            <div class="col-md-6 traditionals">
+                <h2 class="traditionals__head">Traditional Advisors</h2>
+                <ul class="traditionals__list">
+                    {% assign trads = site.data.advisors.traditionals %}
+                    {% for item in trads %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-6 envest">
+                <h2 class="envest__head">Envest</h2>
+                <ul class="envest__list">
+                    {% assign envests = site.data.advisors.envests %}
+                    {% for item in envests %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

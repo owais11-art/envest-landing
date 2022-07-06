@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, ul, li{
+    margin: 0;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+li{
+    list-style-type: none;
+}
+
+button{
+    border: none;
+}
+
+body{
+    overflow-x: hidden;
+}

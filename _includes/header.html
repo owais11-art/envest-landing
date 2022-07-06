@@ -1,0 +1,20 @@
+<nav>
+    <div class="box nav__container d-flex justify-content-between align-items-center">
+        <div class="nav__container__company-logo">
+            <img src="assets/images/Envest.svg" alt="company-logo" class="image-fluid">
+        </div>
+        <div class="nav__container__toggler">
+            <i class="bi bi-list"></i>
+        </div>
+        <ul class="nav__container__nav-items">
+            {% for item in site.data.navbar %}
+                <li class="nav__container__nav-items__nav-item">
+                    <a href="{{ item.link }}">{{ item.name }}</a>
+                </li>
+            {% endfor %}
+            <li class="nav__container__nav-items__nav-item">
+                <button>Get it Now</button>
+            </li>
+        </ul>
+    </div>
+</nav>

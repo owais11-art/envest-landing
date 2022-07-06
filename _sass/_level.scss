@@ -1,0 +1,89 @@
+$level-head-size: 3rem;
+.level{
+    padding-top: 80px;
+    background-color: $level-background;
+    .level-heading{
+        font-family: $cormorant;
+        font-weight: 700;
+        font-size: $level-head-size - .3rem;
+        color: $blue;
+        text-align: center;
+        span{
+            color: $soft-red;
+        }
+        @media($md){
+            font-size: $level-head-size;
+        }
+    }
+    .level-para{
+        font-family: $dm-sans;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $black;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        @media($md){
+            width: 80%;
+            text-align: left;
+        }
+        @media($lg){
+            width: 65%;
+            text-align: left;
+        }
+    }
+    &__flex--wrap{
+        margin-top: 40px;
+        .come-in{
+            font-family: $dm-sans;
+            font-weight: 700;
+            font-size: 1rem;
+            color: $black;
+        }
+        .check-list{
+            li{
+                margin-top: 0;
+                position: relative;
+                padding: 15px;
+                font-family: $dm-sans;
+                font-weight: 400;
+                font-size: .8rem;
+                color: $black;
+                @media($lg){
+                    font-size: 1rem;
+                }
+                &::before{
+                   content: url(../images/level-check.svg);
+                   position: absolute;
+                   left: -32px;
+                }
+            }
+        }
+        .buttons{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            height: 90px;
+            @media($md){
+                justify-content: flex-start;
+            }
+            button{
+                @include button(5px, 15px, 3px, $soft-red, $white, 700);
+                font-family: $lato;
+                font-size: 18px;
+                box-shadow: 0px 8px 16px rgba(250, 66, 58, 0.34);
+                height: 60px;
+                align-self: flex-end;
+                &:hover{
+                    background-color: $light-soft-red;
+                }
+            }
+            .down-arrow{
+                display: none;
+                @media($md){
+                    display: inline;
+                }
+            }
+        }
+    }
+}

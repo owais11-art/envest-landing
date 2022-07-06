@@ -1,0 +1,65 @@
+$invest-head-size: 3rem;
+$invest-line-height: 3.365rem;
+.investments{
+    background-color: $investment-bg;
+    padding: 80px 0;
+    &__head{
+        font-family: $cormorant;
+        font-weight: 700;
+        font-size: $invest-head-size - .4rem;
+        color: $blue;
+        line-height: $invest-line-height;
+        margin-top: 30px;
+        text-align: center;
+        @media($md){
+            margin-top: 100px;
+            font-size: $invest-head-size - .5rem;
+            text-align: left;
+        }
+        @media($lg){
+            margin-top: 100px;
+            font-size: $invest-head-size;
+            text-align: left;
+        }
+        span{
+            color: $light-soft-red;
+        }
+    }
+    &__para{
+        font-family: $dm-sans;
+        font-weight: 400;
+        font-size: 18px;
+        color: $black;
+        text-align: center;
+        margin-top: 20px;
+        @media($md){
+            text-align: left;
+        }
+    }
+    .buttons{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        height: 90px;
+        @media($md){
+            justify-content: flex-start;
+        }
+        button{
+            @include button(5px, 65px, 3px, $soft-red, $white, 700);
+            font-family: $lato;
+            font-size: 18px;
+            box-shadow: 0px 8px 16px rgba(250, 66, 58, 0.34);
+            height: 60px;
+            align-self: flex-end;
+            &:hover{
+                background-color: $light-soft-red;
+            }
+        }
+        .down-arrow{
+            display: none;
+            @media($md){
+                display: inline;
+            }
+        }
+    }
+}

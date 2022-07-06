@@ -1,0 +1,13 @@
+<section class="faq">
+    <div class="box">
+        <h2 class="faq__head">Frequently <span>Asked Questions</span></h2>
+        <div class="faq__cards">
+            {% for item in site.data.faq %}
+                <div class="faq__card">
+                    <h2 class="question">{{ item.question }}</h2>
+                    <p class="answer">{{ item.answer }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

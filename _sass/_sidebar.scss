@@ -1,0 +1,43 @@
+.side-nav{
+    width: 373px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: $soft-red;
+    z-index: 10;
+    transform: translateX(1000px);
+    transition: transform .5s;
+    &.active{
+        transform: translateX(0);
+    }
+    &__container__nav-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        &__nav-item a{
+            color: $white;
+            font-family: $dm-sans;
+            font-weight: 400;
+        }
+        button{
+            @include button(10px, 29px, 50px, $white, $soft-red, 700);
+            transition: all .5s;
+            &:hover{
+                border-color: $white;
+                background-color: $light-soft-red;
+                color: $white;
+            }
+        }
+    }
+    &__container__cancel{
+        margin-left: 30px;
+        cursor: pointer;
+        i{
+            font-size: 2rem;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.advisors{
+    padding: 80px 0;
+    background-color: $light-soft-red;
+    h2{
+        font-family: $cormorant;
+        font-weight: 700;
+        font-size: 3.375rem;
+        text-align: center;
+        color: $white;
+    }
+    &__flex__wrap{
+        margin-top: 40px;
+        @media($md){
+            padding: 0 20px;
+        }
+        .envest{
+            background: $purple;
+            padding: 20px 0;
+            padding-right: 15px;
+            border: 3px solid $white;
+            border-radius: 15px;
+            box-shadow: 0px 12px 24px rgba(204, 210, 211, 0.2);
+            &__head{
+                font-size: 48px;
+            }
+            &__list{
+                li{
+                    color: $white;
+                    border-bottom: 1px solid $lines;
+                    padding: 10px 0;
+                    &::before{
+                        content: url(../images/envest-check.svg);
+                        padding-right: 10px;
+                        left: -12px;
+                    }
+                    &:last-child{
+                        border: none;
+                    }
+                }
+            }
+        }
+        .traditionals{
+            padding: 20px 0;
+            padding-right: 15px;
+            &__head{
+                font-size: 36px;
+            }
+            &__list{
+                li{
+                    color: $white;
+                    border-bottom: 1px solid $lines;
+                    padding: 10px 0;
+                    &::before{
+                        content: url(../images/trad-check.svg);
+                        padding-right: 10px;
+                        left: -12px;
+                    }
+                    &:last-child{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

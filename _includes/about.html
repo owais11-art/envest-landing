@@ -1,0 +1,28 @@
+<section class="about">
+    <div class="box">
+        <h2 class="about__head">
+            We'll Give You the Tools You Need to Make Better Trades, Every Time
+        </h2>
+        <div class="about__cards">
+            {% for item in site.data.about %}
+                <div class="about__card">
+                    <div class="image">
+                        <img src="{{ item.image }}" alt="" class="image-fluid">
+                    </div>
+                    <h2 class="about__card__head">
+                        {{ item.head }}
+                    </h2>
+                    <p class="about__card__para">
+                        {{ item.para }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="buttons">
+            <button>I want in</button>
+            <span class="arrow">
+                <img src="assets/images/arrow1.svg" alt="" class="image-fluid">
+            </span>
+        </div>
+    </div>
+</section>

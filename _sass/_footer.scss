@@ -1,0 +1,20 @@
+footer{
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid black;
+        @media($md){
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        p, a{
+            font-family: $dm-sans;
+            font-weight: 400;
+            font-size: 1rem;
+            color: $card-text;
+            margin-top: 15px;
+        }
+    }
+}

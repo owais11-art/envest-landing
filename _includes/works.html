@@ -1,0 +1,20 @@
+<section class="works">
+    <div class="box">
+        <h2 class="works__head">
+            Here's How <span>It Works?</span>
+        </h2>
+        <div class="works__cards">
+            {% for item in site.data.works %}
+                <div class="works__card">
+                    <div class="step">
+                        <p>STEP<sub>{{ item.step }}</sub></p>
+                    </div>
+                    <div class="works__card__body">
+                        <h2 class="works__card__head">{{ item.head }}</h2>
+                        <p class="works__card__content">{{ item.para }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

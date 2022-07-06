@@ -1,0 +1,110 @@
+$head: 3.4375rem;
+$para: 1.125rem;
+$signup-info: 0.9375rem;
+$tagline: 2rem;
+$line-height-head: 4.6875rem;
+$line-height-para: 2.125rem;
+.hero{
+    padding: 80px 0;
+    .hero__container{
+        background-color: transparent;
+        &__tagline{
+            font-family: $cormorant-infant;
+            font-weight: 700;
+            color: $soft-red;
+            font-size: $tagline - .3rem;
+            @media($lg){
+                font-size: $tagline;
+            }
+        }
+        &__head{
+            font-family: $cormorant-infant;
+            font-weight: 700;
+            font-size: $head - 1rem;
+            color: $blue;
+            line-height: $line-height-head - 1.2rem;
+            @media($lg){
+                font-size: $head;
+                line-height: $line-height-head
+            }
+        }
+        &__para{
+            font-family: $dm-sans;
+            font-weight: 400;
+            font-size: $para - .2rem;
+            color: $hero-para;
+            line-height: $line-height-para - .5rem;
+            @media($lg){
+                font-size: $para;
+                line-height: $line-height-para;
+            }
+        }
+        &__signup-form{
+            margin-top: 30px;
+            &__signup-info{
+                font-family: $dm-sans;
+                font-weight: 700;
+                font-size: $signup-info;
+                line-height: 24.1px;
+                width: 100%;
+                color: $signup-text;
+                @media($lg){
+                    width: 80%;
+                }
+            }
+            form{
+                .form-box{
+                    background-color: $email-background;
+                    width: 90%;
+                    padding: 10px 15px;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media($lg){
+                        width: 80%;
+                    }
+                    input[type="email"]{
+                        background-color: $email-background;
+                        font-family: $dm-sans;
+                        font-size: 1rem;
+                        color: $email-text;
+                        font-weight: 400;
+                        &::placeholder{
+                            font-family: inherit;
+                            font-size: inherit;
+                            color: inherit;
+                            font-weight: inherit;
+                        }
+                    }
+                    button{
+                        display: none;
+                        @media($lg){
+                            display: inline;
+                            @include button(10px, 29px, 50px, $soft-red, $white, 700);
+                            // background-color: $soft-red;
+                            // padding: 10px 29px;
+                            // border-radius: 50px;
+                            // color: $white;
+                            // font-weight: 700;
+                        }
+                        &:hover{
+                            background-color: $light-soft-red;
+                        }
+                    }
+                }
+                .mob-btn{
+                    @include button(10px, 29px, 50px, $soft-red, $white, 700);
+                    width: 90%;
+                    margin-top: 20px;
+                    @media($lg){
+                        display: none;
+                    }
+                    &:hover{
+                        background-color: $light-soft-red;
+                    }
+                }
+            }
+        }
+    }
+}

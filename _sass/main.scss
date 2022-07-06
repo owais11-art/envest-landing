@@ -1,0 +1,37 @@
+@import 'reset';
+@import 'fonts';
+@import 'colors';
+@import 'breakpoints';
+@import 'button';
+@import 'header';
+@import 'hero';
+@import 'about';
+@import 'level';
+@import 'works';
+@import 'advisors';
+@import 'advice';
+@import 'faq';
+@import 'investment';
+@import 'footer';
+@import 'sidebar';
+
+
+.box{
+    width: 85%;
+    margin: 0 auto;
+    @media($md) and (max-width: 990px){
+        width: 90%;
+    }
+}
+
+// .box-crap{
+//     @extend .box;
+//     @media($md) and (max-width: 990px){
+//         width: 100%;
+//         margin-left: -100px;
+//     }
+//     @media($md){
+//         width: 95%;
+//         margin-left: 100px;
+//     }
+// }
