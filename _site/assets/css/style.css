@@ -23,7 +23,7 @@ nav .nav__container__toggler { font-size: 2rem; }
 
 nav .nav__container__nav-items { display: none; }
 
-@media (min-width: 768px) { nav .nav__container__nav-items { display: flex; justify-content: space-evenly; width: 100%; align-items: center; } nav .nav__container__nav-items__nav-item { padding: 20px 0; align-self: center; margin-top: 5px; font-family: "DM Sans", sans-serif; } nav .nav__container__nav-items__nav-item a { color: #071B38; font-weight: 500; font-size: 15px; } nav .nav__container__nav-items__nav-item button { background-color: #ffffff; padding: 10px 29px; border: 2px solid #E54F3A; border-radius: 50px; color: #E54F3A; font-weight: 700; transition: all .5s; } nav .nav__container__nav-items__nav-item button:hover { border-color: #ffffff; background-color: #E54F3A; color: #ffffff; } }
+@media (min-width: 768px) { nav .nav__container__nav-items { display: flex; justify-content: space-around; width: 100%; align-items: center; } nav .nav__container__nav-items__nav-item { padding: 20px 0; align-self: center; margin-top: 5px; font-family: "DM Sans", sans-serif; } nav .nav__container__nav-items__nav-item a { color: #071B38; font-weight: 500; font-size: 15px; } nav .nav__container__nav-items__nav-item button { background-color: #ffffff; padding: 10px 29px; border: 2px solid #E54F3A; border-radius: 50px; color: #E54F3A; font-weight: 700; transition: all .5s; } nav .nav__container__nav-items__nav-item button:hover { border-color: #ffffff; background-color: #E54F3A; color: #ffffff; } }
 
 .hero { padding: 80px 0; }
 
@@ -39,13 +39,13 @@ nav .nav__container__nav-items { display: none; }
 
 .hero .hero__container__para { font-family: "DM Sans", sans-serif; font-weight: 400; font-size: 0.925rem; color: #080809; line-height: 1.625rem; }
 
-@media (min-width: 1200px) { .hero .hero__container__para { font-size: 1.125rem; line-height: 2.125rem; } }
+@media (min-width: 1200px) { .hero .hero__container__para { font-size: 1.125rem; line-height: 2.125rem; width: 90%; } }
 
 .hero .hero__container__signup-form { margin-top: 30px; }
 
 .hero .hero__container__signup-form__signup-info { font-family: "DM Sans", sans-serif; font-weight: 700; font-size: 0.9375rem; line-height: 24.1px; width: 100%; color: #1B3A67; }
 
-@media (min-width: 1200px) { .hero .hero__container__signup-form__signup-info { width: 80%; } }
+@media (min-width: 1200px) { .hero .hero__container__signup-form__signup-info { width: 70%; } }
 
 .hero .hero__container__signup-form form .form-box { background-color: #F6F7FA; width: 90%; padding: 10px 15px; border-radius: 50px; display: flex; justify-content: space-between; align-items: center; }
 
@@ -273,7 +273,7 @@ footer .footer-wrapper p, footer .footer-wrapper a { font-family: "DM Sans", san
 
 .side-nav__container__cancel i { font-size: 2rem; color: #ffffff; }
 
-.box { width: 85%; margin: 0 auto; }
+.box { width: 83%; max-width: 1200px; margin: 0 auto; }
 
 @media (min-width: 768px) and (max-width: 990px) { .box { width: 90%; } }
 

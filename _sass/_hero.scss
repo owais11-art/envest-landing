@@ -37,6 +37,7 @@ $line-height-para: 2.125rem;
             @media($lg){
                 font-size: $para;
                 line-height: $line-height-para;
+                width: 90%;
             }
         }
         &__signup-form{
@@ -49,7 +50,7 @@ $line-height-para: 2.125rem;
                 width: 100%;
                 color: $signup-text;
                 @media($lg){
-                    width: 80%;
+                    width: 70%;
                 }
             }
             form{
@@ -82,11 +83,6 @@ $line-height-para: 2.125rem;
                         @media($lg){
                             display: inline;
                             @include button(10px, 29px, 50px, $soft-red, $white, 700);
-                            // background-color: $soft-red;
-                            // padding: 10px 29px;
-                            // border-radius: 50px;
-                            // color: $white;
-                            // font-weight: 700;
                         }
                         &:hover{
                             background-color: $light-soft-red;
