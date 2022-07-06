@@ -203,7 +203,9 @@ nav .nav__container__nav-items { display: none; }
 
 @media (min-width: 1200px) { .advice__para { width: 50%; margin: 0 auto; } }
 
-.advice .image { display: flex; justify-content: flex-end; }
+.advice .image { display: flex; justify-content: center; }
+
+@media (max-width: 1400px) { .advice .image { justify-content: flex-end; } }
 
 .advice .image img { display: block; }
 
@@ -276,5 +278,3 @@ footer .footer-wrapper p, footer .footer-wrapper a { font-family: "DM Sans", san
 .box { width: 83%; max-width: 1200px; margin: 0 auto; }
 
 @media (min-width: 768px) and (max-width: 990px) { .box { width: 90%; } }
-
-/*# sourceMappingURL=style.css.map */
