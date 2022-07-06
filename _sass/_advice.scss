@@ -4,8 +4,8 @@ $advice-line-height: 3.375rem;
     padding: 80px 0;
     padding-bottom: 0;
     // height: 700px;
-    background: url(../images/advice-bg.png) no-repeat center center / cover;
-        // url(../images/advice-bg-2.png) no-repeat right 200px;
+    background: url(../images/advice-bg.png) no-repeat center center / cover,
+        url(../images/invest-bg.png) no-repeat right bottom;
     &__head{
         font-family: $cormorant;
         font-weight: 700;
