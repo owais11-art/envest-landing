@@ -187,7 +187,7 @@ nav .nav__container__nav-items { display: none; }
 
 .advisors__flex__wrap .traditionals__list li:last-child { border: none; }
 
-.advice { padding: 80px 0; padding-bottom: 0; background: url(../images/advice-bg.png) no-repeat center center/cover, url(../images/invest-bg.png) no-repeat right bottom; }
+.advice { padding: 80px 0; background: url(../images/advice-bg.png) no-repeat center center/cover; }
 
 .advice__head { font-family: "Cormorant", serif; font-weight: 700; font-size: 2rem; line-height: 2.875rem; text-align: center; color: #123975; width: 100%; }
 
@@ -203,11 +203,11 @@ nav .nav__container__nav-items { display: none; }
 
 @media (min-width: 1200px) { .advice__para { width: 50%; margin: 0 auto; } }
 
-.advice .image { display: flex; justify-content: center; }
+.advice .image { width: 80%; max-width: 755px; margin: 0 auto; text-align: center; background: #ffffff; box-shadow: 8px 16px 24px rgba(0, 0, 0, 0.12); border-radius: 6px; padding: 40px 0; margin-top: 30px; }
 
-@media (max-width: 1400px) { .advice .image { justify-content: flex-end; } }
+@media (min-width: 768px) { .advice .image { width: 50%; } }
 
-.advice .image img { display: block; }
+@media (min-width: 768px) { .advice { background: url(../images/invest-bg.png) no-repeat right bottom, url(../images/advice-bg.png) no-repeat center center/cover; } }
 
 .faq { padding-top: 80px; background-color: #f9f9f9; border: 1px solid #f9f9f9; }
 

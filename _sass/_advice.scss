@@ -2,10 +2,7 @@ $advice-head-size: 3rem;
 $advice-line-height: 3.375rem;
 .advice{
     padding: 80px 0;
-    padding-bottom: 0;
-    // height: 700px;
-    background: url(../images/advice-bg.png) no-repeat center center / cover,
-        url(../images/invest-bg.png) no-repeat right bottom;
+    background: url(../images/advice-bg.png) no-repeat center center / cover;
     &__head{
         font-family: $cormorant;
         font-weight: 700;
@@ -45,13 +42,21 @@ $advice-line-height: 3.375rem;
         }
     }
     .image{
-        display: flex;
-        @media(max-width: 1400px){
-            justify-content: flex-end;
+        width: 80%;
+        max-width: 755px;
+        @media($md){
+            width: 50%;
         }
-        justify-content: center;
-        img{
-        display: block;
-        }
+        margin: 0 auto;
+        text-align: center;
+        background: $white;
+        box-shadow: 8px 16px 24px rgba(0, 0, 0, 0.12);
+        border-radius: 6px;
+        padding: 40px 0;
+        margin-top: 30px;
+    }
+    @media($md){
+        background: url(../images/invest-bg.png) no-repeat right bottom,
+        url(../images/advice-bg.png) no-repeat center center / cover;
     }
 }
