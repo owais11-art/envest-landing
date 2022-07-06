@@ -9,7 +9,7 @@
         <ul class="nav__container__nav-items">
             {% for item in site.data.navbar %}
                 <li class="nav__container__nav-items__nav-item">
-                    <a href="{{ item.link }}">{{ item.name }}</a>
+                    <a href="#{{ item.link }}">{{ item.name }}</a>
                 </li>
             {% endfor %}
             <li class="nav__container__nav-items__nav-item">
