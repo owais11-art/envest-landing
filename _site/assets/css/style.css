@@ -83,7 +83,7 @@ nav .nav__container__nav-items { display: none; }
 
 .about .about__cards .about__card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 7px; background-color: #000000; border-radius: 5px 5px 0 0; }
 
-.about .about__cards .about__card .image { height: 89px; width: 89px; border-radius: 50%; display: grid; place-items: center; background: #f9f9f9; margin: 0 auto; }
+.about .about__cards .about__card .image { height: 89px; width: 89px; border-radius: 50%; display: grid; place-items: center; background: #f9f9f9; margin: 0 auto; margin-top: 20px; }
 
 .about .about__cards .about__card .about__card__head { font-family: "Cormorant", serif; font-weight: 700; font-size: 26px; text-align: center; margin: 20px 0; }
 
@@ -213,7 +213,7 @@ nav .nav__container__nav-items { display: none; }
 
 @media (min-width: 768px) { .advice { background: url(../images/invest-bg.png) no-repeat right bottom, url(../images/advice-bg.png) no-repeat center center/cover; } }
 
-.faq { padding-top: 80px; background-color: #f9f9f9; border: 1px solid #f9f9f9; }
+.faq { padding: 80px 0; background-color: #f9f9f9; border: 1px solid #f9f9f9; }
 
 .faq__head { font-family: "Cormorant", serif; font-weight: 700; font-size: 2.75rem; text-align: center; color: #123975; }
 
@@ -284,3 +284,5 @@ footer .footer-wrapper p, footer .footer-wrapper a { font-family: "DM Sans", san
 .box { width: 83%; max-width: 1200px; margin: 0 auto; }
 
 @media (min-width: 768px) and (max-width: 990px) { .box { width: 90%; } }
+
+/*# sourceMappingURL=style.css.map */
