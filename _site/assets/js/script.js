@@ -1,21 +1,18 @@
-const toggler = document.querySelector(".nav__container__toggler");
+console.log('hello')
 
-const cancel = document.querySelector(".side-nav__container__cancel");
 
-const sideBar = document.querySelector(".side-nav");
+const toggler = document.querySelector('.nav__container__toggler');
 
-const button = document.querySelectorAll("button");
-console.log("button");
+const cancel = document.querySelector('.side-nav__container__cancel');
 
-toggler.addEventListener("click", () => {
-  sideBar.classList.add("active");
+const sideBar = document.querySelector('.side-nav');
+
+console.log('hello');
+
+toggler.addEventListener('click', () => {
+    sideBar.classList.add('active');
 });
 
-cancel.addEventListener("click", () => {
-  sideBar.classList.remove("active");
-});
-
-button.addEventListener("click", (e) => {
-  e.preventDefault();
-  console.log("clicked");
+cancel.addEventListener('click', () => {
+    sideBar.classList.remove('active');
 });
