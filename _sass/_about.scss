@@ -77,9 +77,12 @@ $about-line-hieght-head: 3.375rem;
         gap: 10px;
         button{
             @include button(10px, 20px, 0px, $black, $white, 700);
-            font-family: $lato;
-            font-size: 17px;
             align-self: flex-end;
+            a{
+                color: $white;
+                font-family: $lato;
+                font-size: 17px;
+            }
             &:hover{
                 background-color: rgba(0, 0, 0, 0.5);
             }

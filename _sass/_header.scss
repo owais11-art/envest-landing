@@ -33,12 +33,16 @@ nav{
                     padding: 10px 29px;
                     border: 2px solid $soft-red;
                     border-radius: 50px;
-                    color: $soft-red;
-                    font-weight: 700;
+                    a{
+                        color: $soft-red;
+                        font-weight: 700;
+                    }
                     transition: all .5s;
                     &:hover{
                         border-color: $white;
                         background-color: $soft-red;
+                    }
+                    &:hover a{
                         color: $white;
                     }
                 }

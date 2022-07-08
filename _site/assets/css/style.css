@@ -23,7 +23,7 @@ nav .nav__container__toggler { font-size: 2rem; }
 
 nav .nav__container__nav-items { display: none; }
 
-@media (min-width: 768px) { nav .nav__container__nav-items { display: flex; justify-content: space-around; width: 100%; align-items: center; } nav .nav__container__nav-items__nav-item { padding: 20px 0; align-self: center; margin-top: 5px; font-family: "DM Sans", sans-serif; } nav .nav__container__nav-items__nav-item a { color: #071B38; font-weight: 500; font-size: 15px; } nav .nav__container__nav-items__nav-item button { background-color: #ffffff; padding: 10px 29px; border: 2px solid #E54F3A; border-radius: 50px; color: #E54F3A; font-weight: 700; transition: all .5s; } nav .nav__container__nav-items__nav-item button:hover { border-color: #ffffff; background-color: #E54F3A; color: #ffffff; } }
+@media (min-width: 768px) { nav .nav__container__nav-items { display: flex; justify-content: space-around; width: 100%; align-items: center; } nav .nav__container__nav-items__nav-item { padding: 20px 0; align-self: center; margin-top: 5px; font-family: "DM Sans", sans-serif; } nav .nav__container__nav-items__nav-item a { color: #071B38; font-weight: 500; font-size: 15px; } nav .nav__container__nav-items__nav-item button { background-color: #ffffff; padding: 10px 29px; border: 2px solid #E54F3A; border-radius: 50px; transition: all .5s; } nav .nav__container__nav-items__nav-item button a { color: #E54F3A; font-weight: 700; } nav .nav__container__nav-items__nav-item button:hover { border-color: #ffffff; background-color: #E54F3A; } nav .nav__container__nav-items__nav-item button:hover a { color: #ffffff; } }
 
 .hero { padding: 80px 0; }
 
@@ -91,7 +91,9 @@ nav .nav__container__nav-items { display: none; }
 
 .about .buttons { margin-top: 30px; display: flex; justify-content: center; align-items: center; gap: 10px; }
 
-.about .buttons button { padding: 10px 20px; border-radius: 0px; background-color: #000000; color: #ffffff; font-weight: 700; font-family: "Lato", sans-serif; font-size: 17px; align-self: flex-end; }
+.about .buttons button { padding: 10px 20px; border-radius: 0px; background-color: #000000; color: #ffffff; font-weight: 700; align-self: flex-end; }
+
+.about .buttons button a { color: #ffffff; font-family: "Lato", sans-serif; font-size: 17px; }
 
 .about .buttons button:hover { background-color: rgba(0, 0, 0, 0.5); }
 
@@ -127,7 +129,9 @@ nav .nav__container__nav-items { display: none; }
 
 @media (min-width: 768px) { .level__flex--wrap .buttons { justify-content: flex-start; } }
 
-.level__flex--wrap .buttons button { padding: 5px 15px; border-radius: 3px; background-color: #E54F3A; color: #ffffff; font-weight: 700; font-family: "Lato", sans-serif; font-size: 18px; box-shadow: 0px 8px 16px rgba(250, 66, 58, 0.34); height: 60px; align-self: flex-end; }
+.level__flex--wrap .buttons button { padding: 5px 15px; border-radius: 3px; background-color: #E54F3A; color: #ffffff; font-weight: 700; box-shadow: 0px 8px 16px rgba(250, 66, 58, 0.34); height: 60px; align-self: flex-end; }
+
+.level__flex--wrap .buttons button a { color: #ffffff; font-family: "Lato", sans-serif; font-size: 18px; }
 
 .level__flex--wrap .buttons button:hover { background-color: #F1684C; }
 
@@ -245,7 +249,9 @@ nav .nav__container__nav-items { display: none; }
 
 @media (min-width: 768px) { .investments .buttons { justify-content: flex-start; } }
 
-.investments .buttons button { padding: 5px 65px; border-radius: 3px; background-color: #E54F3A; color: #ffffff; font-weight: 700; font-family: "Lato", sans-serif; font-size: 18px; box-shadow: 0px 8px 16px rgba(250, 66, 58, 0.34); height: 60px; align-self: flex-end; }
+.investments .buttons button { padding: 5px 65px; border-radius: 3px; background-color: #E54F3A; color: #ffffff; font-weight: 700; box-shadow: 0px 8px 16px rgba(250, 66, 58, 0.34); height: 60px; align-self: flex-end; }
+
+.investments .buttons button a { color: #ffffff; font-family: "Lato", sans-serif; font-size: 18px; }
 
 .investments .buttons button:hover { background-color: #F1684C; }
 
@@ -278,5 +284,3 @@ footer .footer-wrapper p, footer .footer-wrapper a { font-family: "DM Sans", san
 .box { width: 83%; max-width: 1200px; margin: 0 auto; }
 
 @media (min-width: 768px) and (max-width: 990px) { .box { width: 90%; } }
-
-/*# sourceMappingURL=style.css.map */
