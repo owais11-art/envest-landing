@@ -7,10 +7,10 @@ function sendEmail(e) {
   e.preventDefault();
   Email.send({
     SecureToken : "6eb85316-cb8c-41bb-989a-12bd8bd752ef",
-    To : 'khanovais650@gmail.com',
+    To : input.value,
     From : "owaiszahoor79@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    Subject : "Welcome to Envest",
+    Body : "We are happy to see you here."
 }).then(
   message => console.log(message)
 );
