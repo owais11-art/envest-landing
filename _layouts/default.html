@@ -10,22 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('9X4zpy3QB7SLo8UpR');
+        })();
+    </script>
     <title>{{ page.title }}</title>
 </head>
 <body>
-    {% include sidebar.html %}
-    {% include header.html %}
-    {% include hero.html %}
-    {% include about.html %}
-    {% include level.html %}
-    {% include works.html %}
-    {% include advisors.html %}
-    {% include advice.html %}
-    {% include faq.html %}
-    {% include investment.html %}
-    {% include footer.html %}
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/main.js"></script>
+    {{ content }}
 </body>
 </html>

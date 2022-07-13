@@ -6,15 +6,17 @@
         <div class="nav__container__toggler">
             <i class="bi bi-list"></i>
         </div>
-        <ul class="nav__container__nav-items">
-            {% for item in site.data.navbar %}
+        {% if page.url != '/thanks.html' %}
+            <ul class="nav__container__nav-items">
+                {% for item in site.data.navbar %}
+                    <li class="nav__container__nav-items__nav-item">
+                        <a href="#{{ item.link }}">{{ item.name }}</a>
+                    </li>
+                {% endfor %}
                 <li class="nav__container__nav-items__nav-item">
-                    <a href="#{{ item.link }}">{{ item.name }}</a>
+                    <button><a href="#form">Get it Now</a></button>
                 </li>
-            {% endfor %}
-            <li class="nav__container__nav-items__nav-item">
-                <button><a href="#form">Get it Now</a></button>
-            </li>
-        </ul>
+            </ul>
+        {% endif %}
     </div>
 </nav>
