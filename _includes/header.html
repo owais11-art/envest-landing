@@ -1,6 +1,9 @@
 <nav>
     <div class="box nav__container d-flex justify-content-between align-items-center">
-        <div class="nav__container__company-logo">
+        <div class="nav__container__company-logo"
+        {% if page.url == '/thanks.html' %}
+            style="text-align: center; width: 100%;"
+        {% endif %} >
             <img src="assets/images/Envest.svg" alt="company-logo" class="image-fluid">
         </div>
         <div class="nav__container__toggler">
