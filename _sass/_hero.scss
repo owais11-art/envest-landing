@@ -55,12 +55,18 @@ $line-height-para: 2.125rem;
             }
             form{
                 .form-box{
+                    span{
+                        flex-grow: 1;
+                        display: flex;
+                        input{
+                            flex-grow: 1;
+                        }
+                    }
                     background-color: $email-background;
                     width: 90%;
                     padding: 10px 15px;
                     border-radius: 50px;
                     display: flex;
-                    justify-content: space-between;
                     align-items: center;
                     @media($lg){
                         width: 80%;

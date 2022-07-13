@@ -47,7 +47,11 @@ nav .nav__container__nav-items { display: none; }
 
 @media (min-width: 1200px) { .hero .hero__container__signup-form__signup-info { width: 70%; } }
 
-.hero .hero__container__signup-form form .form-box { background-color: #F6F7FA; width: 90%; padding: 10px 15px; border-radius: 50px; display: flex; justify-content: space-between; align-items: center; }
+.hero .hero__container__signup-form form .form-box { background-color: #F6F7FA; width: 90%; padding: 10px 15px; border-radius: 50px; display: flex; align-items: center; }
+
+.hero .hero__container__signup-form form .form-box span { flex-grow: 1; display: flex; }
+
+.hero .hero__container__signup-form form .form-box span input { flex-grow: 1; }
 
 @media (min-width: 1200px) { .hero .hero__container__signup-form form .form-box { width: 80%; } }
 
