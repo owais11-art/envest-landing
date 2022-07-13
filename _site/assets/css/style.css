@@ -49,9 +49,13 @@ nav .nav__container__nav-items { display: none; }
 
 .hero .hero__container__signup-form form .form-box { background-color: #F6F7FA; width: 90%; padding: 10px 15px; border-radius: 50px; display: flex; align-items: center; }
 
-.hero .hero__container__signup-form form .form-box span { flex-grow: 1; display: flex; }
+.hero .hero__container__signup-form form .form-box span { flex-grow: 1; display: flex; align-items: center; gap: 2px; }
 
 .hero .hero__container__signup-form form .form-box span input { flex-grow: 1; }
+
+.hero .hero__container__signup-form form .form-box span label { align-self: flex-start; }
+
+.hero .hero__container__signup-form form .form-box span label img { margin-top: -5px; }
 
 @media (min-width: 1200px) { .hero .hero__container__signup-form form .form-box { width: 80%; } }
 
