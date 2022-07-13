@@ -55,33 +55,79 @@ $line-height-para: 2.125rem;
             }
             form{
                 .form-box{
-                    span{
-                        flex-grow: 1;
+                    &>*{
+                        margin-top: 20px;
+                    }
+                    .phone{
                         display: flex;
                         align-items: center;
+                        flex-wrap: wrap;
                         gap: 2px;
-                        // border: 1px solid black;
+                        border-bottom: 1px solid $email-text;
                         input{
                             flex-grow: 1;
                         }
                         label{
-                            // border: 1px solid blue;
+                            i{
+                                color: $email-text;
+                            }
+                        }
+                    }
+                    .email{
+                        display: flex;
+                        align-items: center;
+                        gap: 2px;
+                        border-bottom: 1px solid $email-text;
+                        input{
+                            flex-grow: 1;
+                        }
+                        label{
                             align-self: flex-start;
                             img{
                                 margin-top: -5px;
                             }
                         }
                     }
+                    .names{
+                        display: flex;
+                        flex-direction: column;
+                        @media(min-width: 900px){
+                            flex-direction: row;
+                            gap: 8px;
+                        }
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 20px;
+                        input{
+                            border-bottom: 1px solid $email-text;
+                            flex-grow: 1;
+                            width: 100%;
+                        }
+                    }
+                    .message{
+                        margin-bottom: 20px;
+                        textarea{
+                            width: 100%;
+                            background-color: $email-background;
+                            color: $email-text;
+                            font-family: $dm-sans;
+                            outline: none;
+                            border: 1px solid $email-text;
+                            height: 80px;
+                            padding: 5px;
+                            &::placeholder{
+                                color: $email-text;
+                            }
+                        }
+                    }
                     background-color: $email-background;
                     width: 90%;
                     padding: 10px 15px;
-                    border-radius: 50px;
-                    display: flex;
-                    align-items: center;
+                    border-radius: 10px;
                     @media($lg){
                         width: 80%;
                     }
-                    input[type="email"]{
+                    input{
                         background-color: $email-background;
                         font-family: $dm-sans;
                         font-size: 1rem;
@@ -97,7 +143,9 @@ $line-height-para: 2.125rem;
                     button{
                         display: none;
                         @media($lg){
-                            display: inline;
+                            display: block;
+                            margin: 0 auto;
+                            margin-top: 20px;
                             @include button(10px, 29px, 50px, $soft-red, $white, 700);
                         }
                         &:hover{

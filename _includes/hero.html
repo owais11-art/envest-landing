@@ -24,12 +24,25 @@
                         </p>
                         <form action="">
                             <div class="form-box">
-                                <span>
+                                <div class="names">
+                                    <input type="text" id="first-name" placeholder="First Name" required>
+                                    <input type="text" id="last-name" placeholder="Last Name" required>
+                                </div>
+                                <div class="email">
                                     <label for="email">
                                         <img src="assets/images/message.png" alt="" class="img-fluid">
                                     </label>
-                                    <input type="email" placeholder="Enter Your Email">
-                                </span>
+                                    <input type="email" placeholder="Enter Your Email" id="mail" required>
+                                </div>
+                                <div class="phone">
+                                    <label for="phone">
+                                        <i class="bi bi-phone"></i>
+                                    </label>
+                                    <input type="number" id="mobile" placeholder="Enter Your Phone Number" required>
+                                </div>
+                                <div class="message">
+                                    <textarea placeholder="Drop a message" id="msg"></textarea>
+                                </div>
                                 <button id="email">Get it Now</button>
                             </div>
                             <button type="submit" class="mob-btn">Get it Now</button>

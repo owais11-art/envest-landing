@@ -47,25 +47,45 @@ nav .nav__container__nav-items { display: none; }
 
 @media (min-width: 1200px) { .hero .hero__container__signup-form__signup-info { width: 70%; } }
 
-.hero .hero__container__signup-form form .form-box { background-color: #F6F7FA; width: 90%; padding: 10px 15px; border-radius: 50px; display: flex; align-items: center; }
+.hero .hero__container__signup-form form .form-box { background-color: #F6F7FA; width: 90%; padding: 10px 15px; border-radius: 10px; }
 
-.hero .hero__container__signup-form form .form-box span { flex-grow: 1; display: flex; align-items: center; gap: 2px; }
+.hero .hero__container__signup-form form .form-box > * { margin-top: 20px; }
 
-.hero .hero__container__signup-form form .form-box span input { flex-grow: 1; }
+.hero .hero__container__signup-form form .form-box .phone { display: flex; align-items: center; flex-wrap: wrap; gap: 2px; border-bottom: 1px solid #959EAC; }
 
-.hero .hero__container__signup-form form .form-box span label { align-self: flex-start; }
+.hero .hero__container__signup-form form .form-box .phone input { flex-grow: 1; }
 
-.hero .hero__container__signup-form form .form-box span label img { margin-top: -5px; }
+.hero .hero__container__signup-form form .form-box .phone label i { color: #959EAC; }
+
+.hero .hero__container__signup-form form .form-box .email { display: flex; align-items: center; gap: 2px; border-bottom: 1px solid #959EAC; }
+
+.hero .hero__container__signup-form form .form-box .email input { flex-grow: 1; }
+
+.hero .hero__container__signup-form form .form-box .email label { align-self: flex-start; }
+
+.hero .hero__container__signup-form form .form-box .email label img { margin-top: -5px; }
+
+.hero .hero__container__signup-form form .form-box .names { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; }
+
+@media (min-width: 900px) { .hero .hero__container__signup-form form .form-box .names { flex-direction: row; gap: 8px; } }
+
+.hero .hero__container__signup-form form .form-box .names input { border-bottom: 1px solid #959EAC; flex-grow: 1; width: 100%; }
+
+.hero .hero__container__signup-form form .form-box .message { margin-bottom: 20px; }
+
+.hero .hero__container__signup-form form .form-box .message textarea { width: 100%; background-color: #F6F7FA; color: #959EAC; font-family: "DM Sans", sans-serif; outline: none; border: 1px solid #959EAC; height: 80px; padding: 5px; }
+
+.hero .hero__container__signup-form form .form-box .message textarea::placeholder { color: #959EAC; }
 
 @media (min-width: 1200px) { .hero .hero__container__signup-form form .form-box { width: 80%; } }
 
-.hero .hero__container__signup-form form .form-box input[type="email"] { background-color: #F6F7FA; font-family: "DM Sans", sans-serif; font-size: 1rem; color: #959EAC; font-weight: 400; }
+.hero .hero__container__signup-form form .form-box input { background-color: #F6F7FA; font-family: "DM Sans", sans-serif; font-size: 1rem; color: #959EAC; font-weight: 400; }
 
-.hero .hero__container__signup-form form .form-box input[type="email"]::placeholder { font-family: inherit; font-size: inherit; color: inherit; font-weight: inherit; }
+.hero .hero__container__signup-form form .form-box input::placeholder { font-family: inherit; font-size: inherit; color: inherit; font-weight: inherit; }
 
 .hero .hero__container__signup-form form .form-box button { display: none; }
 
-@media (min-width: 1200px) { .hero .hero__container__signup-form form .form-box button { display: inline; padding: 10px 29px; border-radius: 50px; background-color: #E54F3A; color: #ffffff; font-weight: 700; } }
+@media (min-width: 1200px) { .hero .hero__container__signup-form form .form-box button { display: block; margin: 0 auto; margin-top: 20px; padding: 10px 29px; border-radius: 50px; background-color: #E54F3A; color: #ffffff; font-weight: 700; } }
 
 .hero .hero__container__signup-form form .form-box button:hover { background-color: #F1684C; }
 
