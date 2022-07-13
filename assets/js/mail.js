@@ -10,7 +10,7 @@ if(form){
     e.preventDefault();
     let tempParams = {
       from_name: "owais khan",
-      message: `${input.value} subscribed`,
+      message: `${fName.value} ${lName.value} subscribed`,
     };
     emailjs
       .send("service_cxs2chw", "template_rou68ij", tempParams)
