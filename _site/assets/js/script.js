@@ -1,6 +1,3 @@
-console.log('hello')
-
-
 const toggler = document.querySelector('.nav__container__toggler');
 
 const cancel = document.querySelector('.side-nav__container__cancel');

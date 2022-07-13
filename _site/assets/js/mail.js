@@ -12,8 +12,8 @@ form.addEventListener('submit', e => {
   .then(res => {
     if(res.status === 200) {
       input.value = '';
-      window.location.href = "http://127.0.0.1:4000/thanks.html";
+      window.location.href += '/thanks.html';
     }
     else console.log('Email not sent😞');
   });
-})
+});
