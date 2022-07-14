@@ -24,7 +24,8 @@ const formValidation = () => {
   }
 
   if(phone.value){
-    if(!Number.isInteger(parseInt(phone.value))) {
+    const isNum = phone.value.split('').some(val => !Number.isInteger(parseInt(val)));
+    if(isNum) {
       setError(phone, 'input must be digits');
       return false;
     }
