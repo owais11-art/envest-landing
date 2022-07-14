@@ -19,7 +19,7 @@ const setError = (element, errorMessage) => {
 }
 
 const formValidation = () => {
-  const emailValidator = new RegExp(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/);
+  const emailValidator = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
   if(input.value){
     if (!emailValidator.test(input.value)) {
       setError(input, 'Invalid Email');
