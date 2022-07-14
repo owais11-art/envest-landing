@@ -58,6 +58,14 @@ $line-height-para: 2.125rem;
                     &>*{
                         margin-top: 20px;
                     }
+                    .error-message{
+                        color: orangered;
+                        display: block;
+                        text-align: right;
+                        height: auto;
+                        margin-top: 0;
+                        font-family: $lato;
+                    }
                     .phone{
                         display: flex;
                         align-items: center;

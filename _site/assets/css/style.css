@@ -51,6 +51,8 @@ nav .nav__container__nav-items { display: none; }
 
 .hero .hero__container__signup-form form .form-box > * { margin-top: 20px; }
 
+.hero .hero__container__signup-form form .form-box .error-message { color: orangered; display: block; text-align: right; height: auto; margin-top: 0; font-family: "Lato", sans-serif; }
+
 .hero .hero__container__signup-form form .form-box .phone { display: flex; align-items: center; flex-wrap: wrap; gap: 2px; border-bottom: 1px solid #959EAC; }
 
 .hero .hero__container__signup-form form .form-box .phone input { flex-grow: 1; }
