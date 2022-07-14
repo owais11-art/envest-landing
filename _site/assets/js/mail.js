@@ -73,8 +73,7 @@ const phoneValidation = (phone) => {
   }else if(length === 12){
     slicedValue = phone.value.slice(2);
   }else{
-    setError(phone, "should be 10 digits");
-    return false;
+    slicedValue = phone.value;
   }
   if (slicedValue) {
     const isNum = slicedValue
@@ -82,6 +81,9 @@ const phoneValidation = (phone) => {
       .some((val) => !Number.isInteger(parseInt(val)));
     if (isNum) {
       setError(phone, "input must be digits");
+      return false;
+    } else if(phone.value < 10){
+      setError(phone, 'Should be 10 digits');
       return false;
     } else {
       resetError(phone);
