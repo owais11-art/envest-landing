@@ -7,7 +7,14 @@ const form = document.querySelector("form");
 
 const setError = (element, errorMessage) => {
   element.parentElement.style.borderBottom = '1px solid orangered';
-  element.parentElement.nextElementSibling.textContent = errorMessage;
+  if(!element.parentElement.nextElementSibling.firstElementChild.firstElementChild){
+    const i = document.createElement('i');
+    i.classList.add('bi' ,'bi-exclamation-octagon-fill');
+    i.style.color = 'orangered';
+    console.log(i);
+    element.parentElement.nextElementSibling.firstElementChild.append(i);
+    element.parentElement.nextElementSibling.lastElementChild.textContent = errorMessage;
+  }else element.parentElement.nextElementSibling.lastElementChild.textContent = errorMessage;
   element.classList.add('error');
 }
 
